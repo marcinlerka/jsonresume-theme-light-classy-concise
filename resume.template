@@ -7,14 +7,18 @@
     <title>{{basics.name}}</title>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+ 
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/960gs/0/960.css">
     <style>
 		body {
 			font-size: 62.5%;
 			font-family: Montserrat;
-			color: #333333;
+			background-color: #000000;
+			color: white;
 		}
 		a {
-			color: #333333;
+			color: white;
 			text-decoration: none;
 		}
 		a:visited {
@@ -32,7 +36,8 @@
 			margin-rightt:5%;
 		}
 		h1 {
-			font-size:3em;
+			color: white;
+			font-size:2em;
 			margin-bottom:0;
 		}
 		.profile {
@@ -64,7 +69,8 @@
 			font-size: 3.5em;
 		}
 		h3 {
-			font-size:2em;
+			color: lightgrey;
+			font-size:28px;
 			margin-bottom:0;
 		}
 		h4 {
@@ -76,10 +82,12 @@
 			margin-bottom: 10px;
 		}
 		p {
+			color: gray;
 			font-family: 'Open Sans';
 			font-size: 1.5em;
 		}
 		li {
+			color: gray;
 			font-family: 'Open Sans';
 			font-size: 1.5em;
 		}
@@ -126,6 +134,7 @@
 	<script src= "//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
   </head>
   <body>
+    <div class="container_12">
 	<div class= "header">
 		<h1>{{basics.capitalName}}</h1>
 		<h3 class= "label">{{basics.capitalLabel}}</h3>
@@ -264,6 +273,7 @@
 		</div>
 		{{/referencesBool}}
 
+	</div>
 	</div>
   </body>
 </html>
