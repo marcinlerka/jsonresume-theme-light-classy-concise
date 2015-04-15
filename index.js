@@ -48,14 +48,18 @@ function render(resumeObject) {
 	if (resumeObject.basics.profiles) {
 		if (resumeObject.basics.profiles[0] && resumeObject.basics.profiles[0].network) {
 			_.each(resumeObject.basics.profiles, function(w) {
-				if ((w.network == 'Twitter' || w.network == 'twitter') && !w.url && w.username) {
-					w.url = 'https://twitter.com/' + w.username;
-				}
-				else if ((w.network == 'facebook' || w.network == 'Facebook' || w.network == 'FaceBook') && !w.url && w.username) {
-					w.url = 'https://facebook.com/' + w.username;
-				}
-				else if ((w.network == 'Linkedin' || w.network == 'linkedin' || w.network == 'LinkedIn') && !w.url && w.username) {
-					w.url = 'https://linkedin.com/in/' + w.username;
+				if (w.network && !w.url && w.username) {
+					switch (w.network.toLowerCase()) {
+						case 'twitter':
+							w.url = 'https://twitter.com/' + w.username;
+							break;
+						case 'facebook':
+							w.url = 'https://facebook.com/' + w.username;
+							break;
+						case 'linkedin':
+							w.url = 'https://linkedin.com/in/' + w.username;
+							break;
+					}
 				}
 			});
 		}
