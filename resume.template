@@ -45,6 +45,9 @@ a:focus {
 .section {
 	margin-bottom: 6em;
 }
+.section .fa.left {
+	margin-right: 0.25em;
+}
 h1 {
 	color: #eeeeee;
 	font-size: 2em;
@@ -163,6 +166,12 @@ blockquote .name {
 	font-weight: bold;
 	font-family: "Montserrat";
 }
+::-moz-selection {
+	background: #666666;
+}
+::selection {
+	background: #666666;
+}
 @media (max-width: 1000px) {
 	.header {
 		font-size: 1.66em;
@@ -226,13 +235,13 @@ blockquote .name {
 			<main role="main" class="main">
 				{{#aboutBool}}
 				<section id="about" class="section">
-					<h2><i class="fa fa-user left"></i> About</h2>
+					<h2><i class="fa fa-user left"></i>About</h2>
 					<p>{{basics.summary}}</p>
 				</section>
 				{{/aboutBool}}
 				{{#workBool}}
 				<section id="work" class="section">
-					<h2><i class="fa fa-suitcase left"></i> Work Experience</h2>
+					<h2><i class="fa fa-suitcase left"></i>Work Experience</h2>
 					{{#work}}
 					<div class="job">
 						<h3>{{position}}, {{company}}</h3>
@@ -252,7 +261,7 @@ blockquote .name {
 				{{/workBool}}
 				{{#skillsBool}}
 				<section id="skills" class="section">
-					<h2><i class="fa fa-tasks left"></i> Skills</h2>
+					<h2><i class="fa fa-tasks left"></i>Skills</h2>
 					{{#skills}}
 					<h3 class="skills">{{name}}</h3>
 					<ul class="list-set keywords">
@@ -265,7 +274,7 @@ blockquote .name {
 				{{/skillsBool}}
 				{{#educationBool}}
 				<section id="education" class="section">
-					<h2><i class="fa fa-graduation-cap left"></i> Education</h2>
+					<h2><i class="fa fa-graduation-cap left"></i>Education</h2>
 					{{#education}}
 					<h3>{{studyType}} - {{institution}}</h3>
 					<h4>{{startDateMonth}}{{startDateYear}} - {{endDateMonth}}{{endDateYear}}</h4>
@@ -283,7 +292,7 @@ blockquote .name {
 				{{/educationBool}}
 				{{#awardsBool}}
 				<section id="awards" class="section">
-					<h2><i class="fa fa-trophy left"></i> Awards</h2>
+					<h2><i class="fa fa-trophy left"></i>Awards</h2>
 					{{#awards}}
 					<h3>{{title}} - {{awarder}}</h3>
 					<h4>{{day}} {{month}} {{year}}</h4>
@@ -293,7 +302,7 @@ blockquote .name {
 				{{/awardsBool}}
 				{{#publicationsBool}}
 				<section id="publications" class="section">
-					<h2><i class="fa fa-book left"></i> Publications</h2>
+					<h2><i class="fa fa-book left"></i>Publications</h2>
 					{{#publications}}
 					<h3>{{name}}</h3>
 					<h4>{{day}} {{month}} {{year}}</h4>
@@ -304,7 +313,7 @@ blockquote .name {
 				{{/publicationsBool}}
 				{{#interestsBool}}
 				<section id="interests" class="section">
-					<h2><i class="fa fa-star left"></i> Interests</h2>
+					<h2><i class="fa fa-star left"></i>Interests</h2>
 					{{#interests}}
 					<h3 class="skills">{{name}}</h3>
 					<ul class="list-set keywords">
@@ -317,7 +326,7 @@ blockquote .name {
 				{{/interestsBool}}
 				{{#languagesBool}}
 				<section id="languages" class="section">
-					<h2><i class="fa fa-quote-left left"></i> Languages</h2>
+					<h2><i class="fa fa-quote-left left"></i>Languages</h2>
 					{{#languages}}
 					<h3>{{language}}</h3>
 					<h4>Fluency: {{fluency}}</h4>
@@ -326,7 +335,7 @@ blockquote .name {
 				{{/languagesBool}}
 				{{#referencesBool}}
 				<section id="references" class="section">
-					<h2><i class="fa fa-thumbs-up left"></i> References</h2>
+					<h2><i class="fa fa-thumbs-up left"></i>References</h2>
 					{{#references}}
 					<blockquote>
 						{{reference}}
