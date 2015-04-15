@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>{{basics.name}}</title>
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans" />
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans" />
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 		<style>
 /*<!--*/
@@ -176,7 +176,7 @@ blockquote .name {
 	</head>
 	<body>
 		<div class="main-wrap">
-			<div class="header">
+			<header class="header">
 				<h1>{{basics.name}}</h1>
 				<h3 class="label">{{basics.label}}</h3>
 				<div id="contact">
@@ -191,23 +191,21 @@ blockquote .name {
 				{{/websiteBool}}
 				</div>
 				<br />
-				<div id="profiles">
-					<ul class="list-set">
-					{{#basics.profiles}}
-						<li><a href="{{url}}" class="profile" title="{{network}}"><i class="{{faclass}}"></i><span class="profile-name">{{network}}</span></a></li>
-					{{/basics.profiles}}
-					</ul>
-				</div>		
-			</div>
-			<div class="main">
+				<ul id="profiles" class="list-set">
+				{{#basics.profiles}}
+					<li><a href="{{url}}" class="profile" title="{{network}}"><i class="{{faclass}}"></i><span class="profile-name">{{network}}</span></a></li>
+				{{/basics.profiles}}
+				</ul>
+			</header>
+			<main role="main" class="main">
 				{{#aboutBool}}
-				<div id="about">
+				<section id="about">
 					<h2><i class="fa fa-user left"></i> About</h2>
 					<p>{{basics.summary}}</p>
-				</div>
+				</section>
 				{{/aboutBool}}
 				{{#workBool}}
-				<div id="work">
+				<section id="work">
 					<h2><i class="fa fa-suitcase left"></i> Work Experience</h2>
 					{{#work}}
 					<div class="job">
@@ -224,10 +222,10 @@ blockquote .name {
 						{{/workHighlights}}
 					</div>
 					{{/work}}
-				</div>
+				</section>
 				{{/workBool}}
 				{{#skillsBool}}
-				<div id="skills">
+				<section id="skills">
 					<h2><i class="fa fa-tasks left"></i> Skills</h2>
 					{{#skills}}
 					<h3 class="skills">{{name}}</h3>
@@ -237,10 +235,10 @@ blockquote .name {
 					{{/keywords}}
 					</ul>
 					{{/skills}}
-				</div>
+				</section>
 				{{/skillsBool}}
 				{{#educationBool}}
-				<div id="education">
+				<section id="education">
 					<h2><i class="fa fa-graduation-cap left"></i> Education</h2>
 					{{#education}}
 					<h3>{{studyType}} - {{institution}}</h3>
@@ -255,20 +253,20 @@ blockquote .name {
 					</ul>
 					{{/educationCourses}}
 					{{/education}}
-				</div>
+				</section>
 				{{/educationBool}}
 				{{#awardsBool}}
-				<div id="awards">
+				<section id="awards">
 					<h2><i class="fa fa-trophy left"></i> Awards</h2>
 					{{#awards}}
 					<h3>{{title}} - {{awarder}}</h3>
 					<h4>{{day}} {{month}} {{year}}</h4>
 					<p>{{summary}}</p>
 					{{/awards}}
-				</div>
+				</section>
 				{{/awardsBool}}
 				{{#publicationsBool}}
-				<div id="publications">
+				<section id="publications">
 					<h2><i class="fa fa-book left"></i> Publications</h2>
 					{{#publications}}
 					<h3>{{name}}</h3>
@@ -276,10 +274,10 @@ blockquote .name {
 					<p>{{summary}}</p>
 					<h4>Website<br /><a href="{{website}}">{{website}}</a></h4>
 					{{/publications}}
-				</div>
+				</section>
 				{{/publicationsBool}}
 				{{#interestsBool}}
-				<div id="interests">
+				<section id="interests">
 					<h2><i class="fa fa-star left"></i> Interests</h2>
 					{{#interests}}
 					<h3 class="skills">{{name}}</h3>
@@ -289,19 +287,19 @@ blockquote .name {
 					{{/keywords}}
 					</ul>
 					{{/interests}}
-				</div>
+				</section>
 				{{/interestsBool}}
 				{{#languagesBool}}
-				<div id="languages">
+				<section id="languages">
 					<h2><i class="fa fa-language left"></i> Languages</h2>
 					{{#languages}}
 					<h3>{{language}}</h3>
 					<h4>Fluency: {{fluency}}</h4>
 					{{/languages}}
-				</div>
+				</section>
 				{{/languagesBool}}
 				{{#referencesBool}}
-				<div id="references">
+				<section id="references">
 					<h2><i class="fa fa-thumbs-up left"></i> References</h2>
 					{{#references}}
 					<blockquote>
@@ -310,9 +308,9 @@ blockquote .name {
 					</blockquote>
 					<br />
 					{{/references}}
-				</div>
+				</section>
 				{{/referencesBool}}
-			</div>
+			</main>
 		</div>
 	</body>
 </html>
