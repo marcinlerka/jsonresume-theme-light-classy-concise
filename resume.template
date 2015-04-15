@@ -167,7 +167,7 @@ blockquote .name {
 			<div class="main">
 				{{#aboutBool}}
 				<div id="about">
-					<h2><i class="fa fa-user left"></i> ABOUT</h2>
+					<h2><i class="fa fa-user left"></i> About</h2>
 					<p>
 						{{basics.summary}}
 					</p>
@@ -175,14 +175,14 @@ blockquote .name {
 				{{/aboutBool}}
 				{{#workBool}}
 				<div id="work">
-					<h2><i class="fa fa-suitcase left"></i> WORK EXPERIENCE</h2>
+					<h2><i class="fa fa-suitcase left"></i> Work Experience</h2>
 					{{#work}}
 						<div class="job">
 							<h3>{{position}}, {{company}}</h3>
 							<h4>{{startDateMonth}}{{startDateYear}} - {{endDateMonth}}{{endDateYear}}</h4>
 							<p>{{summary}}</p>
 							{{#workHighlights}}
-							<h4>HIGHLIGHTS</h4>
+							<h4>Highlights</h4>
 							<ul>
 								{{#highlights}}
 								<li>{{.}}</li>
@@ -195,7 +195,7 @@ blockquote .name {
 				{{/workBool}}
 				{{#skillsBool}}
 				<div id="skills">
-					<h2><i class="fa fa-tasks left"></i> SKILLS</h2>
+					<h2><i class="fa fa-tasks left"></i> Skills</h2>
 					{{#skills}}
 						<h3 class="skills">{{name}}</h3>
 						{{#keywords}}
@@ -206,12 +206,12 @@ blockquote .name {
 				{{/skillsBool}}
 				{{#educationBool}}
 				<div id="education">
-					<h2><i class="fa fa-graduation-cap left"></i> EDUCATION</h2>
+					<h2><i class="fa fa-graduation-cap left"></i> Education</h2>
 					{{#education}}
 						<h3>{{institution}} - {{studyType}}, {{area}}</h3>
 						<h4>{{startDateMonth}}{{startDateYear}} - {{endDateMonth}}{{endDateYear}}</h4>
 						{{#educationCourses}}
-						<h4>COURSES</h4>
+						<h4>Courses</h4>
 						<ul>
 							{{#courses}}
 							<li>{{.}}</li>
@@ -223,7 +223,7 @@ blockquote .name {
 				{{/educationBool}}
 				{{#awardsBool}}
 				<div id="awards">
-					<h2><i class="fa fa-trophy left"></i> AWARDS</h2>
+					<h2><i class="fa fa-trophy left"></i> Awards</h2>
 					{{#awards}}
 						<h3>{{title}} - {{awarder}}</h3>
 						<h4>{{day}} {{month}} {{year}}</h4>
@@ -233,18 +233,18 @@ blockquote .name {
 				{{/awardsBool}}
 				{{#publicationsBool}}
 				<div id="publications">
-					<h2><i class="fa fa-book left"></i> PUBLICATIONS</h2>
+					<h2><i class="fa fa-book left"></i> Publications</h2>
 					{{#publications}}
 						<h3>{{name}}</h3>
 						<h4>{{day}} {{month}} {{year}}</h4>
 						<p>{{summary}}</p>
-						<h4>WEBSITE<br /><a href="{{website}}">{{website}}</a></h4>
+						<h4>Website<br /><a href="{{website}}">{{website}}</a></h4>
 					{{/publications}}
 				</div>
 				{{/publicationsBool}}
 				{{#interestsBool}}
 				<div id="interests">
-					<h2><i class="fa fa-star left"></i> INTERESTS</h2>
+					<h2><i class="fa fa-star left"></i> Interests</h2>
 					{{#interests}}
 						<h3 class="skills">{{name}}</h3>
 						{{#keywords}}
@@ -255,7 +255,7 @@ blockquote .name {
 				{{/interestsBool}}
 				{{#languagesBool}}
 				<div id="languages">
-					<h2><i class="fa fa-language left"></i> LANGUAGES</h2>
+					<h2><i class="fa fa-language left"></i> Languages</h2>
 					{{#languages}}
 						<h3>{{language}}</h3>
 						<h4>Fluency: {{fluency}}</h4>
@@ -264,7 +264,7 @@ blockquote .name {
 				{{/languagesBool}}
 				{{#referencesBool}}
 				<div id="references">
-					<h2><i class="fa fa-thumbs-up left"></i> REFERENCES</h2>
+					<h2><i class="fa fa-thumbs-up left"></i> References</h2>
 					{{#references}}
 					<blockquote>
 						{{reference}}
