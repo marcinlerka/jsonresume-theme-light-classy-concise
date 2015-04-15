@@ -7,7 +7,6 @@
 		<title>{{basics.name}}</title>
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans" />
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/960gs/0/960.css" />
 		<style>
 /*<!--*/
 body {
@@ -15,6 +14,10 @@ body {
 	font-family: "Montserrat", sans-serif;
 	background-color: #171717;
 	color: #eeeeee;
+}
+.wrap {
+	max-width: 960px;
+	margin: 0 auto;
 }
 a {
 	color: #eeeeee;
@@ -142,7 +145,7 @@ blockquote .name {
 		<![endif]-->
 	</head>
 	<body>
-		<div class="container_12">
+		<div class="wrap">
 			<div class="header">
 				<h1>{{basics.name}}</h1>
 				<h3 class="label">{{basics.label}}</h3>
