@@ -107,6 +107,7 @@ li {
 	list-style: none;
 }
 .list-set li {
+	font-family: "Montserrat";
 	display: inline-block;
 }
 .list-set li a {
@@ -122,7 +123,7 @@ li {
 	position: relative;
 	top: -0.05em;
 }
-.keywords {
+.list-set.keywords li {
 	background-color: #444444;
 	color: #eeeeee;
 	padding: 6px;
@@ -176,22 +177,22 @@ blockquote .name {
 				<h1>{{basics.name}}</h1>
 				<h3 class="label">{{basics.label}}</h3>
 				<div id="contact">
-					{{#phoneBool}}
-						<div class="contact-header">{{basics.phone}}</div>
-					{{/phoneBool}}
-					{{#emailBool}}
-						<div class="contact-header"><a href="mailto:{{basics.email}}">{{basics.email}}</a></div>
-					{{/emailBool}}
-					{{#websiteBool}}
-						<div class="contact-header"><a href="{{basics.website}}">{{basics.website}}</a></div>
-					{{/websiteBool}}
+				{{#phoneBool}}
+					<div class="contact-header">{{basics.phone}}</div>
+				{{/phoneBool}}
+				{{#emailBool}}
+					<div class="contact-header"><a href="mailto:{{basics.email}}">{{basics.email}}</a></div>
+				{{/emailBool}}
+				{{#websiteBool}}
+					<div class="contact-header"><a href="{{basics.website}}">{{basics.website}}</a></div>
+				{{/websiteBool}}
 				</div>
 				<br />
 				<div id="profiles">
 					<ul class="list-set">
-						{{#basics.profiles}}
-							<li><a href="{{url}}" class="profile" title="{{network}}"><i class="{{faclass}}"></i><span class="profile-name">{{network}}</span></a></li>
-						{{/basics.profiles}}
+					{{#basics.profiles}}
+						<li><a href="{{url}}" class="profile" title="{{network}}"><i class="{{faclass}}"></i><span class="profile-name">{{network}}</span></a></li>
+					{{/basics.profiles}}
 					</ul>
 				</div>		
 			</div>
@@ -206,19 +207,19 @@ blockquote .name {
 				<div id="work">
 					<h2><i class="fa fa-suitcase left"></i> Work Experience</h2>
 					{{#work}}
-						<div class="job">
-							<h3>{{position}}, {{company}}</h3>
-							<h4>{{startDateMonth}}{{startDateYear}} - {{endDateMonth}}{{endDateYear}}</h4>
-							<p>{{summary}}</p>
-							{{#workHighlights}}
-								<h4>Highlights</h4>
-								<ul>
-								{{#highlights}}
-									<li>{{.}}</li>
-								{{/highlights}}
-								</ul>
-							{{/workHighlights}}
-						</div>
+					<div class="job">
+						<h3>{{position}}, {{company}}</h3>
+						<h4>{{startDateMonth}}{{startDateYear}} - {{endDateMonth}}{{endDateYear}}</h4>
+						<p>{{summary}}</p>
+						{{#workHighlights}}
+						<h4>Highlights</h4>
+						<ul>
+						{{#highlights}}
+							<li>{{.}}</li>
+						{{/highlights}}
+						</ul>
+						{{/workHighlights}}
+					</div>
 					{{/work}}
 				</div>
 				{{/workBool}}
@@ -226,10 +227,12 @@ blockquote .name {
 				<div id="skills">
 					<h2><i class="fa fa-tasks left"></i> Skills</h2>
 					{{#skills}}
-						<h3 class="skills">{{name}}</h3>
-						{{#keywords}}
-							<span class="keywords">{{.}}</span>
-						{{/keywords}}
+					<h3 class="skills">{{name}}</h3>
+					<ul class="list-set keywords">
+					{{#keywords}}
+						<li>{{.}}</li>
+					{{/keywords}}
+					</ul>
 					{{/skills}}
 				</div>
 				{{/skillsBool}}
@@ -237,16 +240,16 @@ blockquote .name {
 				<div id="education">
 					<h2><i class="fa fa-graduation-cap left"></i> Education</h2>
 					{{#education}}
-						<h3>{{institution}} - {{studyType}}, {{area}}</h3>
-						<h4>{{startDateMonth}}{{startDateYear}} - {{endDateMonth}}{{endDateYear}}</h4>
-						{{#educationCourses}}
-						<h4>Courses</h4>
-						<ul>
-						{{#courses}}
-							<li>{{.}}</li>
-						{{/courses}}
-						</ul>
-						{{/educationCourses}}
+					<h3>{{institution}} - {{studyType}}, {{area}}</h3>
+					<h4>{{startDateMonth}}{{startDateYear}} - {{endDateMonth}}{{endDateYear}}</h4>
+					{{#educationCourses}}
+					<h4>Courses</h4>
+					<ul>
+					{{#courses}}
+						<li>{{.}}</li>
+					{{/courses}}
+					</ul>
+					{{/educationCourses}}
 					{{/education}}
 				</div>
 				{{/educationBool}}
@@ -254,9 +257,9 @@ blockquote .name {
 				<div id="awards">
 					<h2><i class="fa fa-trophy left"></i> Awards</h2>
 					{{#awards}}
-						<h3>{{title}} - {{awarder}}</h3>
-						<h4>{{day}} {{month}} {{year}}</h4>
-						<p>{{summary}}</p>
+					<h3>{{title}} - {{awarder}}</h3>
+					<h4>{{day}} {{month}} {{year}}</h4>
+					<p>{{summary}}</p>
 					{{/awards}}
 				</div>
 				{{/awardsBool}}
@@ -264,10 +267,10 @@ blockquote .name {
 				<div id="publications">
 					<h2><i class="fa fa-book left"></i> Publications</h2>
 					{{#publications}}
-						<h3>{{name}}</h3>
-						<h4>{{day}} {{month}} {{year}}</h4>
-						<p>{{summary}}</p>
-						<h4>Website<br /><a href="{{website}}">{{website}}</a></h4>
+					<h3>{{name}}</h3>
+					<h4>{{day}} {{month}} {{year}}</h4>
+					<p>{{summary}}</p>
+					<h4>Website<br /><a href="{{website}}">{{website}}</a></h4>
 					{{/publications}}
 				</div>
 				{{/publicationsBool}}
@@ -275,10 +278,12 @@ blockquote .name {
 				<div id="interests">
 					<h2><i class="fa fa-star left"></i> Interests</h2>
 					{{#interests}}
-						<h3 class="skills">{{name}}</h3>
-						{{#keywords}}
-							<span class="keywords">{{.}}</span>
-						{{/keywords}}
+					<h3 class="skills">{{name}}</h3>
+					<ul class="list-set keywords">
+					{{#keywords}}
+						<li>{{.}}</li>
+					{{/keywords}}
+					</ul>
 					{{/interests}}
 				</div>
 				{{/interestsBool}}
@@ -286,8 +291,8 @@ blockquote .name {
 				<div id="languages">
 					<h2><i class="fa fa-language left"></i> Languages</h2>
 					{{#languages}}
-						<h3>{{language}}</h3>
-						<h4>Fluency: {{fluency}}</h4>
+					<h3>{{language}}</h3>
+					<h4>Fluency: {{fluency}}</h4>
 					{{/languages}}
 				</div>
 				{{/languagesBool}}
@@ -295,11 +300,11 @@ blockquote .name {
 				<div id="references">
 					<h2><i class="fa fa-thumbs-up left"></i> References</h2>
 					{{#references}}
-						<blockquote>
-							{{reference}}
-							<div class="name"><br />- {{name}}</div>
-						</blockquote>
-						<br />
+					<blockquote>
+						{{reference}}
+						<div class="name"><br />- {{name}}</div>
+					</blockquote>
+					<br />
 					{{/references}}
 				</div>
 				{{/referencesBool}}
