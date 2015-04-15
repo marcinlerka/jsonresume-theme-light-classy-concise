@@ -21,18 +21,18 @@ body {
 	margin: 0 auto;
 }
 a {
-	color: #eeeeee;
+	color: #aaaaaa;
 	text-decoration: none;
 	-webkit-transition: color 0.175s ease 0.05s;
 	   -moz-transition: color 0.175s ease 0.05s;
 	        transition: color 0.175s ease 0.05s;
 }
 a:visited {
-	color: #eeeeee;
+	color: #aaaaaa;
 }
 a:hover,
 a:focus {
-	color: #888888;
+	color: #777777;
 	text-decoration: none;
 }
 
