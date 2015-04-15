@@ -177,20 +177,20 @@ blockquote .name {
 				<h3 class="label">{{basics.label}}</h3>
 				<div id="contact">
 					{{#phoneBool}}
-					<div class="contact-header">{{basics.phone}}</div>
+						<div class="contact-header">{{basics.phone}}</div>
 					{{/phoneBool}}
 					{{#emailBool}}
-					<div class="contact-header"><a href="mailto:{{basics.email}}">{{basics.email}}</a></div>
+						<div class="contact-header"><a href="mailto:{{basics.email}}">{{basics.email}}</a></div>
 					{{/emailBool}}
 					{{#websiteBool}}
-					<div class="contact-header"><a href="{{basics.website}}">{{basics.website}}</a></div>
+						<div class="contact-header"><a href="{{basics.website}}">{{basics.website}}</a></div>
 					{{/websiteBool}}
 				</div>
 				<br />
 				<div id="profiles">
 					<ul class="list-set">
 						{{#basics.profiles}}
-						<li><a href="{{url}}" class="profile" title="{{network}}"><i class="{{faclass}}"></i><span class="profile-name">{{network}}</span></a></li>
+							<li><a href="{{url}}" class="profile" title="{{network}}"><i class="{{faclass}}"></i><span class="profile-name">{{network}}</span></a></li>
 						{{/basics.profiles}}
 					</ul>
 				</div>		
@@ -199,9 +199,7 @@ blockquote .name {
 				{{#aboutBool}}
 				<div id="about">
 					<h2><i class="fa fa-user left"></i> About</h2>
-					<p>
-						{{basics.summary}}
-					</p>
+					<p>{{basics.summary}}</p>
 				</div>
 				{{/aboutBool}}
 				{{#workBool}}
@@ -213,12 +211,12 @@ blockquote .name {
 							<h4>{{startDateMonth}}{{startDateYear}} - {{endDateMonth}}{{endDateYear}}</h4>
 							<p>{{summary}}</p>
 							{{#workHighlights}}
-							<h4>Highlights</h4>
-							<ul>
+								<h4>Highlights</h4>
+								<ul>
 								{{#highlights}}
-								<li>{{.}}</li>
+									<li>{{.}}</li>
 								{{/highlights}}
-							</ul>
+								</ul>
 							{{/workHighlights}}
 						</div>
 					{{/work}}
@@ -230,7 +228,7 @@ blockquote .name {
 					{{#skills}}
 						<h3 class="skills">{{name}}</h3>
 						{{#keywords}}
-						<span class="keywords">{{.}}</span>
+							<span class="keywords">{{.}}</span>
 						{{/keywords}}
 					{{/skills}}
 				</div>
@@ -244,9 +242,9 @@ blockquote .name {
 						{{#educationCourses}}
 						<h4>Courses</h4>
 						<ul>
-							{{#courses}}
+						{{#courses}}
 							<li>{{.}}</li>
-							{{/courses}}
+						{{/courses}}
 						</ul>
 						{{/educationCourses}}
 					{{/education}}
@@ -279,7 +277,7 @@ blockquote .name {
 					{{#interests}}
 						<h3 class="skills">{{name}}</h3>
 						{{#keywords}}
-						<span class="keywords">{{.}}</span>
+							<span class="keywords">{{.}}</span>
 						{{/keywords}}
 					{{/interests}}
 				</div>
@@ -297,11 +295,11 @@ blockquote .name {
 				<div id="references">
 					<h2><i class="fa fa-thumbs-up left"></i> References</h2>
 					{{#references}}
-					<blockquote>
-						{{reference}}
-						<div class="name"><br />- {{name}}</div>
-					</blockquote>
-					<br />
+						<blockquote>
+							{{reference}}
+							<div class="name"><br />- {{name}}</div>
+						</blockquote>
+						<br />
 					{{/references}}
 				</div>
 				{{/referencesBool}}
