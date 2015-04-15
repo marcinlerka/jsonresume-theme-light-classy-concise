@@ -305,7 +305,7 @@ blockquote .name {
 				{{/interestsBool}}
 				{{#languagesBool}}
 				<section id="languages" class="section">
-					<h2><i class="fa fa-language left"></i> Languages</h2>
+					<h2><i class="fa fa-quote-left left"></i> Languages</h2>
 					{{#languages}}
 					<h3>{{language}}</h3>
 					<h4>Fluency: {{fluency}}</h4>
