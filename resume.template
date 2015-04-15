@@ -136,7 +136,10 @@ blockquote .name {
 }
 /*-->*/
 		</style>
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
 	</head>
 	<body>
 		<div class="container_12">
