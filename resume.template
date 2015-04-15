@@ -141,7 +141,7 @@ blockquote .name {
 				<div id="contact">
 					{{#emailBool}}
 					<div class="contact-header">
-						EMAIL &bull; <a href="mailto:{{basics.email}}" target="_blank">{{basics.email}}</a>
+						EMAIL &bull; <a href="mailto:{{basics.email}}">{{basics.email}}</a>
 					</div>
 					{{/emailBool}}
 					{{#phoneBool}}
@@ -151,7 +151,7 @@ blockquote .name {
 					{{/phoneBool}}
 					{{#websiteBool}}
 					<div class="contact-header">
-						WEBSITE &bull; <a href="{{basics.website}}" target="_blank">{{basics.website}}</a>
+						WEBSITE &bull; <a href="{{basics.website}}">{{basics.website}}</a>
 					</div>
 					{{/websiteBool}}
 				</div>
@@ -160,7 +160,7 @@ blockquote .name {
 					<div class="contact-header">PROFILES</div>
 					<br />
 					{{#basics.profiles}}
-					<p class="profile"><a href="{{url}}" target="_blank" class="profile">{{network}}</a></p>
+					<p class="profile"><a href="{{url}}" class="profile">{{network}}</a></p>
 					{{/basics.profiles}}
 				</div>		
 			</div>
@@ -239,7 +239,7 @@ blockquote .name {
 						<h3>{{name}}</h3>
 						<h4>{{day}} {{month}} {{year}}</h4>
 						<p>{{summary}}</p>
-						<h4>WEBSITE<br /><a href="{{website}}" target="_blank">{{website}}</a></h4>
+						<h4>WEBSITE<br /><a href="{{website}}">{{website}}</a></h4>
 					{{/publications}}
 				</div>
 				{{/publicationsBool}}
