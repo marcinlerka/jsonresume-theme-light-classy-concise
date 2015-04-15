@@ -103,6 +103,16 @@ li {
 	font-family: "Open Sans";
 	font-size: 1.5em;
 }
+.list-lines,
+.list-lines li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.list-lines li {
+	font-family: "Montserrat";
+	font-size: 1em;
+}
 .list-set,
 .list-set li {
 	margin: 0;
@@ -179,17 +189,17 @@ blockquote .name {
 			<header class="header">
 				<h1>{{basics.name}}</h1>
 				<h3 class="label">{{basics.label}}</h3>
-				<div id="contact">
+				<ul id="contact" class="list-lines">
 				{{#phoneBool}}
-					<div class="contact-header">{{basics.phone}}</div>
+					<li class="contact-header">{{basics.phone}}</li>
 				{{/phoneBool}}
 				{{#emailBool}}
-					<div class="contact-header"><a href="mailto:{{basics.email}}">{{basics.email}}</a></div>
+					<li class="contact-header"><a href="mailto:{{basics.email}}">{{basics.email}}</a></li>
 				{{/emailBool}}
 				{{#websiteBool}}
-					<div class="contact-header"><a href="{{basics.website}}">{{basics.website}}</a></div>
+					<li class="contact-header"><a href="{{basics.website}}">{{basics.website}}</a></li>
 				{{/websiteBool}}
-				</div>
+				</ul>
 				<br />
 				<ul id="profiles" class="list-set">
 				{{#basics.profiles}}
