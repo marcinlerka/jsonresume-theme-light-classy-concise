@@ -42,6 +42,9 @@ a:focus {
 	margin-left: 5%;
 	margin-rightt: 5%;
 }
+.section {
+	margin-bottom: 6em;
+}
 h1 {
 	color: #eeeeee;
 	font-size: 2em;
@@ -179,6 +182,14 @@ blockquote .name {
 	}
 	h2 {
 		font-size: 2.3em;
+	}
+}
+@media print {
+	.section {
+		page-break-inside: avoid;
+	}
+	.main .section:last-child {
+		margin-bottom: 0;
 	}
 }
 /*-->*/
