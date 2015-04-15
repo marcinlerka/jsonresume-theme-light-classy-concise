@@ -64,6 +64,9 @@ h4 {
 	font-size: 1em;
 	margin: 0;
 }
+.profile-name {
+	display: none;
+}
 
 .contact-header {
 	font-weight: bold;
@@ -96,6 +99,28 @@ li {
 	color: #aaaaaa;
 	font-family: "Open Sans";
 	font-size: 1.5em;
+}
+.list-set,
+.list-set li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.list-set li {
+	display: inline-block;
+}
+.list-set li a {
+	display: inline-block;
+}
+.list-set li .fa {
+	width: 1em;
+	height: 1em;
+}
+/*Minor adjustment.*/
+.list-set li .fa-stack-overflow:before {
+	font-size: 0.9em;
+	position: relative;
+	top: -0.05em;
 }
 .keywords {
 	background-color: #444444;
@@ -163,9 +188,11 @@ blockquote .name {
 				</div>
 				<br />
 				<div id="profiles">
-					{{#basics.profiles}}
-					<p class="profile"><a href="{{url}}" class="profile">{{network}}</a></p>
-					{{/basics.profiles}}
+					<ul class="list-set">
+						{{#basics.profiles}}
+						<li><a href="{{url}}" class="profile" title="{{network}}"><i class="{{faclass}}"></i><span class="profile-name">{{network}}</span></a></li>
+						{{/basics.profiles}}
+					</ul>
 				</div>		
 			</div>
 			<div class="main">
