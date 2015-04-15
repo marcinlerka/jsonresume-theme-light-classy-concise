@@ -29,37 +29,37 @@ a:hover {
 }
 
 .header {
-	text-align:center;
+	text-align: center;
 	font-size: 2em;
-	margin-left:5%;
-	margin-rightt:5%;
+	margin-left: 5%;
+	margin-rightt: 5%;
 }
 h1 {
 	color: #eeeeee;
-	font-size:2em;
-	margin-bottom:0;
+	font-size: 2em;
+	margin-bottom: 0;
 }
 .profile {
 	font-family: Montserrat;
 	font-size: 1em;
-	margin:0;
+	margin: 0;
 }
 
 .contact-header {
-	font-weight:bold;
+	font-weight: bold;
 }
 .label {
 	margin-top: 0;
 	margin-bottom: 1em;
 }
 .fa {
-	font-size:2em;
+	font-size: 2em;
 }
 .left {
 	font-size: 1em;
 }
 .main {
-	margin 0 auto;
+	margin: 0 auto;
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-bottom: 50px;
@@ -69,13 +69,13 @@ h2 {
 }
 h3 {
 	color: #aaaaaa;
-	font-size:28px;
-	margin-bottom:0;
+	font-size: 28px;
+	margin-bottom: 0;
 }
 h4 {
 	color: #4e4e4e;
-	font-size:1.5em;
-	margin-top:0;
+	font-size: 1.5em;
+	margin-top: 0;
 }
 .skills {
 	margin-bottom: 10px;
@@ -92,7 +92,7 @@ li {
 }
 .keywords {
 	background-color: #333333;
-	color:#fff;
+	color: #fff;
 	padding: 6px;
 	font-size: 1.2em;
 	display: inline-block;
@@ -106,7 +106,7 @@ blockquote {
 	font-size: 1.5em;
 }
 blockquote .name {
-	font-weight:bold;
+	font-weight: bold;
 	font-family: "Montserrat";
 }
 @media (max-width: 1000px) {
@@ -119,16 +119,16 @@ blockquote .name {
 }
 @media (max-width: 500px) {
 	p {
-		font-size:1.2em;
+		font-size: 1.2em;
 	}
 	li {
-		font-size:1.2em;
+		font-size: 1.2em;
 	}
 	blockquote {
-		font-size:1.2em;
+		font-size: 1.2em;
 	}
 	h2 {
-		font-size:2.3em;
+		font-size: 2.3em;
 	}
 }
 /*-->*/
