@@ -23,13 +23,17 @@ body {
 a {
 	color: #eeeeee;
 	text-decoration: none;
+	-webkit-transition: color 0.175s ease 0.05s;
+	   -moz-transition: color 0.175s ease 0.05s;
+	        transition: color 0.175s ease 0.05s;
 }
 a:visited {
 	color: #eeeeee;
 }
-a:hover {
+a:hover,
+a:focus {
 	color: #888888;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .header {
