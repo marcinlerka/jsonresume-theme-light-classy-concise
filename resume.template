@@ -138,8 +138,8 @@ li {
 	display: inline-block;
 }
 .list-set li .fa {
-	width: 1em;
-	height: 1em;
+	min-width: 1em;
+	min-height: 1em;
 }
 /*Minor adjustment.*/
 .list-set li .fa-stack-overflow:before {
@@ -199,11 +199,56 @@ blockquote .name {
 	}
 }
 @media print {
+	body {
+		background: #FFFFFF;
+		color: #171717;
+	}
 	.section {
 		page-break-inside: avoid;
 	}
 	.main .section:last-child {
 		margin-bottom: 0;
+	}
+	a {
+		color: #555555;
+	}
+	a:visited {
+		color: #555555;
+	}
+	a:hover,
+	a:focus {
+		color: #555555;
+	}
+	h1 {
+		color: #111111;
+	}
+	h3 {
+		color: #666666;
+	}
+	h4 {
+		color: #999999;
+	}
+	.contact-list li,
+	.contact-list a {
+		color: #111111;
+	}
+	p {
+		color: #555555;
+	}
+	li {
+		color: #555555;
+	}
+	.list-set.keywords li {/*TODO: */
+		background-color: transparent;
+		color: #555555;
+		border: 1px solid #aaaaaa;
+	}
+	blockquote {
+		margin: 2em 10px;
+		padding: 1em 10px;
+		border-left: 10px solid #999999;
+		font-family: "Open Sans";
+		font-size: 1.5em;
 	}
 }
 /*-->*/
