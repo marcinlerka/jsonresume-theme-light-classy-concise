@@ -30,7 +30,7 @@ resumeObject.basics.capitalLabel = (resumeObject.basics.label).toUpperCase();
 	}
 
 	if (resumeObject.basics.profiles) {
-		if (resumeObject.basics.profiles[0].network) {
+		if (resumeObject.basics.profiles[0] && resumeObject.basics.profiles[0].network) {
 			_.each(resumeObject.basics.profiles, function(w){
 				if ((w.network == 'Twitter' || w.network == 'twitter') && w.url == '' && w.username != '') {
 					w.url = "https://twitter.com/" + w.username;
@@ -46,7 +46,7 @@ resumeObject.basics.capitalLabel = (resumeObject.basics.label).toUpperCase();
 	}
 
 	if (resumeObject.work) {
-		if (resumeObject.work[0].company) {
+		if (resumeObject.work[0] && resumeObject.work[0].company) {
 			resumeObject.workBool = true;
 			_.each(resumeObject.work, function(w){
 				if (w.startDate) {
@@ -145,7 +145,7 @@ resumeObject.basics.capitalLabel = (resumeObject.basics.label).toUpperCase();
 	}
 
 	if (resumeObject.education) {
-		if (resumeObject.education[0].institution) {
+		if (resumeObject.education[0] && resumeObject.education[0].institution) {
 			resumeObject.educationBool = true;
 			_.each(resumeObject.education, function(e){
 			    if( !e.area || !e.studyType ){
@@ -255,7 +255,7 @@ resumeObject.basics.capitalLabel = (resumeObject.basics.label).toUpperCase();
 	}
 
 	if (resumeObject.awards) {
-		if (resumeObject.awards[0].title) {
+		if (resumeObject.awards[0] && resumeObject.awards[0].title) {
 			resumeObject.awardsBool = true;
 			_.each(resumeObject.awards, function(a){
 				a.year = (a.date || "").substr(0,4);
@@ -303,7 +303,7 @@ resumeObject.basics.capitalLabel = (resumeObject.basics.label).toUpperCase();
 	}
 
 	if (resumeObject.publications) {
-		if (resumeObject.publications[0].name) {
+		if (resumeObject.publications[0] && resumeObject.publications[0].name) {
 			resumeObject.publicationsBool = true;
 			_.each(resumeObject.publications, function(a){
 				a.year = (a.releaseDate || "").substr(0,4);
@@ -351,25 +351,25 @@ resumeObject.basics.capitalLabel = (resumeObject.basics.label).toUpperCase();
 	}
 
 	if (resumeObject.skills) {
-		if (resumeObject.skills[0].name) {
+		if (resumeObject.skills[0] && resumeObject.skills[0].name) {
 			resumeObject.skillsBool = true;
 		}
 	}
 
 	if (resumeObject.interests) {
-		if (resumeObject.interests[0].name) {
+		if (resumeObject.interests[0] && resumeObject.interests[0].name) {
 			resumeObject.interestsBool = true;
 		}
 	}
 
 	if (resumeObject.languages) {
-		if (resumeObject.languages[0].language) {
+		if (resumeObject.languages[0] && resumeObject.languages[0].language) {
 			resumeObject.languagesBool = true;
 		}
 	}
 
 	if (resumeObject.references) {
-		if (resumeObject.references[0].name) {
+		if (resumeObject.references[0] && resumeObject.references[0].name) {
 			resumeObject.referencesBool = true;
 		}
 	}
