@@ -155,6 +155,9 @@ li {
 	display: inline-block;
 	margin: 0.1em 0;
 }
+.profiles-list {
+	margin-top: 1em;
+}
 blockquote {
 	margin: 2em 10px;
 	padding: 1em 10px;
@@ -165,6 +168,7 @@ blockquote {
 blockquote .name {
 	font-weight: bold;
 	font-family: "Montserrat";
+	margin-top: 1em;
 }
 ::-moz-selection {
 	background: #666666;
@@ -225,8 +229,7 @@ blockquote .name {
 					<li class="contact-header"><a href="{{basics.website}}">{{basics.website}}</a></li>
 				{{/websiteBool}}
 				</ul>
-				<br />
-				<ul id="profiles" class="list-set">
+				<ul id="profiles" class="profiles-list list-set">
 				{{#basics.profiles}}
 					<li><a href="{{url}}" class="profile" title="{{network}}"><i class="{{faclass}}"></i><span class="profile-name">{{network}}</span></a></li>
 				{{/basics.profiles}}
@@ -307,7 +310,7 @@ blockquote .name {
 					<h3>{{name}}</h3>
 					<h4>{{day}} {{month}} {{year}}</h4>
 					<p>{{summary}}</p>
-					<h4>Website<br /><a href="{{website}}">{{website}}</a></h4>
+					<h4>Website: <a href="{{website}}">{{website}}</a></h4>
 					{{/publications}}
 				</section>
 				{{/publicationsBool}}
@@ -339,7 +342,7 @@ blockquote .name {
 					{{#references}}
 					<blockquote>
 						{{reference}}
-						<div class="name"><br />- {{name}}</div>
+						<div class="name">- {{name}}</div>
 					</blockquote>
 					{{/references}}
 				</section>
