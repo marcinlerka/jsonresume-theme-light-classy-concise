@@ -144,26 +144,18 @@ blockquote .name {
 				<h1>{{basics.name}}</h1>
 				<h3 class="label">{{basics.label}}</h3>
 				<div id="contact">
-					{{#emailBool}}
-					<div class="contact-header">
-						EMAIL &bull; <a href="mailto:{{basics.email}}">{{basics.email}}</a>
-					</div>
-					{{/emailBool}}
 					{{#phoneBool}}
-					<div class="contact-header">
-						PHONE &bull; {{basics.phone}}
-					</div>
+					<div class="contact-header">{{basics.phone}}</div>
 					{{/phoneBool}}
+					{{#emailBool}}
+					<div class="contact-header"><a href="mailto:{{basics.email}}">{{basics.email}}</a></div>
+					{{/emailBool}}
 					{{#websiteBool}}
-					<div class="contact-header">
-						WEBSITE &bull; <a href="{{basics.website}}">{{basics.website}}</a>
-					</div>
+					<div class="contact-header"><a href="{{basics.website}}">{{basics.website}}</a></div>
 					{{/websiteBool}}
 				</div>
 				<br />
 				<div id="profiles">
-					<div class="contact-header">PROFILES</div>
-					<br />
 					{{#basics.profiles}}
 					<p class="profile"><a href="{{url}}" class="profile">{{network}}</a></p>
 					{{/basics.profiles}}
