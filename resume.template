@@ -13,7 +13,7 @@
 body {
 	font-size: 62.5%;
 	font-family: Montserrat, sans-serif;
-	background-color: #000000;
+	background-color: #171717;
 	color: #eeeeee;
 }
 a {
