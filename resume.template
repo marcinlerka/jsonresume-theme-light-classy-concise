@@ -38,6 +38,22 @@ h1 {
 	color: #eeeeee;
 	font-size: 2em;
 	margin-bottom: 0;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 3.5em;
+	text-transform: uppercase;
+}
+h3 {
+	color: #aaaaaa;
+	font-size: 28px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+h4 {
+	color: #555555;
+	font-size: 1.5em;
+	margin-top: 0;
 }
 .profile {
 	font-family: Montserrat;
@@ -63,19 +79,6 @@ h1 {
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-bottom: 50px;
-}
-h2 {
-	font-size: 3.5em;
-}
-h3 {
-	color: #aaaaaa;
-	font-size: 28px;
-	margin-bottom: 0;
-}
-h4 {
-	color: #555555;
-	font-size: 1.5em;
-	margin-top: 0;
 }
 .skills {
 	margin-bottom: 10px;
@@ -138,8 +141,8 @@ blockquote .name {
 	<body>
 		<div class="container_12">
 			<div class="header">
-				<h1>{{basics.capitalName}}</h1>
-				<h3 class="label">{{basics.capitalLabel}}</h3>
+				<h1>{{basics.name}}</h1>
+				<h3 class="label">{{basics.label}}</h3>
 				<div id="contact">
 					{{#emailBool}}
 					<div class="contact-header">

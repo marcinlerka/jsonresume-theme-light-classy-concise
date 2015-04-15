@@ -25,10 +25,6 @@ function getMonth(index) {
 }
 
 function render(resumeObject) {
-	
-	resumeObject.basics.capitalName = resumeObject.basics.name.toUpperCase();
-	resumeObject.basics.capitalLabel = resumeObject.basics.label.toUpperCase();
-	
 	if (resumeObject.basics.email) {
 		resumeObject.emailBool = true;
 	}
