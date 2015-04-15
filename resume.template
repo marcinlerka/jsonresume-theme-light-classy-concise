@@ -74,6 +74,10 @@ h4 {
 .contact-header {
 	font-weight: bold;
 }
+.contact-list li,
+.contact-list a {
+	color: #eeeeee;
+}
 .label {
 	margin-top: 0;
 	margin-bottom: 1em;
@@ -189,7 +193,7 @@ blockquote .name {
 			<header class="header">
 				<h1>{{basics.name}}</h1>
 				<h3 class="label">{{basics.label}}</h3>
-				<ul id="contact" class="list-lines">
+				<ul id="contact" class="contact-list list-lines">
 				{{#phoneBool}}
 					<li class="contact-header">{{basics.phone}}</li>
 				{{/phoneBool}}
