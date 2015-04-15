@@ -94,8 +94,8 @@ li {
 	font-size: 1.5em;
 }
 .keywords {
-	background-color: #333333;
-	color: #fff;
+	background-color: #444444;
+	color: #eeeeee;
 	padding: 6px;
 	font-size: 1.2em;
 	display: inline-block;
