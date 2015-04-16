@@ -1,5 +1,5 @@
 {
-  "name": "jsonresume-theme-classy-fork",
+  "name": "jsonresume-theme-classy-responsive",
   "version": "1.0.0",
   "description": "An uber-classy JSONResume theme.",
   "main": "index.js",
@@ -18,13 +18,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AlexanderOMara/jsonresume-theme-dark-classy-fork.git"
+    "url": "https://github.com/AlexanderOMara/jsonresume-theme-dark-classy-responsive.git"
   },
   "keywords": [
     "json", "jsonresume", "theme"
   ],
   "bugs": {
-    "url": "https://github.com/AlexanderOMara/jsonresume-theme-dark-classy-fork/issues"
+    "url": "https://github.com/AlexanderOMara/jsonresume-theme-dark-classy-responsive/issues"
   },
-  "homepage": "https://github.com/AlexanderOMara/jsonresume-theme-dark-classy-fork"
+  "homepage": "https://github.com/AlexanderOMara/jsonresume-theme-dark-classy-responsive"
 }
