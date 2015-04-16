@@ -1,6 +1,6 @@
-#jsonresume-theme-classy
+#jsonresume-theme-classy-responsive
 
-An uber-classy theme for JSONResume.
+An uber-classy theme for JSONResume, now responsive.
 
 ## Usage
 
