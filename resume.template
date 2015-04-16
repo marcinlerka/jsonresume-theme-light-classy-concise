@@ -216,10 +216,10 @@ blockquote .name {
 		margin: 0.25em 0;
 	}
 	h3 {
-		color: #666666;
+		color: #555555;
 	}
 	h4 {
-		color: #999999;
+		color: #bbbbbb;
 	}
 	.contact-list li,
 	.contact-list a {
