@@ -38,8 +38,7 @@ a:focus {
 .header {
 	text-align: center;
 	font-size: 2em;
-	margin-left: 5%;
-	margin-rightt: 5%;
+	margin: 0 10%;
 }
 .section {
 	margin-bottom: 6em;
@@ -97,7 +96,7 @@ h4 {
 	margin: 0 10%;
 }
 .skills {
-	margin-bottom: 10px;
+	margin-bottom: 0.5em;
 }
 p {
 	color: #aaaaaa;
@@ -136,7 +135,7 @@ li {
 	min-width: 1em;
 	min-height: 1em;
 }
-/*Minor adjustment.*/
+/*Minor adjustment to icons.*/
 .list-set li .fa-stack-overflow:before {
 	font-size: 0.9em;
 	position: relative;
@@ -145,7 +144,7 @@ li {
 .list-set.keywords li {
 	background-color: #444444;
 	color: #eeeeee;
-	padding: 6px;
+	padding: 0.5em;
 	font-size: 1.2em;
 	display: inline-block;
 	margin: 0.1em 0;
@@ -154,9 +153,9 @@ li {
 	margin-top: 1em;
 }
 blockquote {
-	margin: 2em 10px;
-	padding: 1em 10px;
-	border-left: 10px solid #666666;
+	margin: 2em 1em;
+	padding: 1em;
+	border-left: 0.75em solid #666666;
 	font-family: "Open Sans";
 	font-size: 1.5em;
 }
@@ -171,26 +170,15 @@ blockquote .name {
 ::selection {
 	background: #666666;
 }
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
+	body {
+		font-size: 50%;
+	}
 	.header {
-		font-size: 1.66em;
+		margin: 0 5%;
 	}
-	h2 {
-		font-size: 3em;
-	}
-}
-@media (max-width: 500px) {
-	p {
-		font-size: 1.2em;
-	}
-	li {
-		font-size: 1.2em;
-	}
-	blockquote {
-		font-size: 1.2em;
-	}
-	h2 {
-		font-size: 2.3em;
+	.main {
+		margin: 0 5%;
 	}
 }
 @media print {
@@ -222,6 +210,10 @@ blockquote .name {
 	}
 	h1 {
 		color: #111111;
+		margin-top: 0.5em;
+	}
+	h2 {
+		margin: 0.5em 0;
 	}
 	h3 {
 		color: #666666;
@@ -245,7 +237,7 @@ blockquote .name {
 		border: 1px solid #aaaaaa;
 	}
 	blockquote {
-		border-left: 10px solid #999999;
+		border-color: #999999;
 	}
 	* {
 		/*Avoid printing the color at the start of the transition (Chrome issue).*/
