@@ -311,19 +311,6 @@ blockquote .name {
 					{{/work}}
 				</section>
 				{{/workBool}}
-				{{#skillsBool}}
-				<section id="skills" class="section">
-					<h2><i class="fa fa-tasks left"></i>Skills</h2>
-					{{#skills}}
-					<h3 class="skills">{{name}}</h3>
-					<ul class="list-set keywords">
-					{{#keywords}}
-						<li>{{.}}</li>
-					{{/keywords}}
-					</ul>
-					{{/skills}}
-				</section>
-				{{/skillsBool}}
 				{{#educationBool}}
 				<section id="education" class="section">
 					<h2><i class="fa fa-graduation-cap left"></i>Education</h2>
@@ -342,6 +329,19 @@ blockquote .name {
 					{{/education}}
 				</section>
 				{{/educationBool}}
+				{{#skillsBool}}
+				<section id="skills" class="section">
+					<h2><i class="fa fa-tasks left"></i>Skills</h2>
+					{{#skills}}
+					<h3 class="skills">{{name}}</h3>
+					<ul class="list-set keywords">
+					{{#keywords}}
+						<li>{{.}}</li>
+					{{/keywords}}
+					</ul>
+					{{/skills}}
+				</section>
+				{{/skillsBool}}
 				{{#awardsBool}}
 				<section id="awards" class="section">
 					<h2><i class="fa fa-trophy left"></i>Awards</h2>
