@@ -7,7 +7,7 @@
 		<title>{{basics.name}}</title>
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans" />
-		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 		<style type="text/css">
 /*<!--*/
 body {
@@ -41,7 +41,8 @@ a:focus {
 	margin: 0 10%;
 }
 .section {
-	margin-bottom: 6em;
+	padding: 1em 1em 0 1em;
+	margin-bottom: 1em;
 }
 .section .fa.left {
 	margin-right: 0.25em;
@@ -84,7 +85,7 @@ h4 {
 }
 .label {
 	margin-top: 0;
-	margin-bottom: 1em;
+	margin-bottom: 0.25em;
 }
 .fa {
 	font-size: 2em;
@@ -93,7 +94,7 @@ h4 {
 	font-size: 1em;
 }
 .main {
-	margin: 0 10%;
+	margin: 0 10% 5em;
 }
 .skills {
 	margin-bottom: 0.5em;
@@ -141,16 +142,20 @@ li {
 	position: relative;
 	top: -0.05em;
 }
+.list-set.keywords {
+	overflow: hidden;
+}
 .list-set.keywords li {
 	background-color: #444444;
 	color: #eeeeee;
-	padding: 0.5em;
+	padding: 0.4em 0.5em;
 	font-size: 1.2em;
 	display: inline-block;
-	margin: 0.1em 0;
+	margin: 1px;
+	float: left;
 }
 .profiles-list {
-	margin-top: 1em;
+	margin-top: 0.75em;
 }
 blockquote {
 	margin: 2em 1em;
@@ -190,7 +195,7 @@ blockquote .name {
 		width: 100%;
 	}
 	.main {
-		margin: 0;
+		margin: 0 0 1em 0;
 	}
 	.section {
 		page-break-inside: avoid;
@@ -244,7 +249,7 @@ blockquote .name {
 		-webkit-transition: none !important;
 		   -moz-transition: none !important;
 		        transition: none !important;
-		
+
 	}
 }
 /*-->*/
