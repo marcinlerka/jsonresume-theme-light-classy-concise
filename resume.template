@@ -83,6 +83,10 @@ h4 {
 .contact-list a {
 	color: #eeeeee;
 }
+.contact-list a:hover,
+.contact-list a:focus {
+	color: #bbbbbb;
+}
 .label {
 	margin-top: 0;
 	margin-bottom: 0.25em;
@@ -108,6 +112,16 @@ li {
 	color: #aaaaaa;
 	font-family: "Open Sans";
 	font-size: 1.5em;
+}
+.contact-list li {
+	display: inline-block;
+}
+.contact-list li:before {
+	content: ' | ';
+	padding: 0 0.25em;
+}
+.contact-list li:first-child:before {
+	content: '';
 }
 .list-lines,
 .list-lines li {
@@ -218,7 +232,7 @@ blockquote .name {
 		margin-top: 0.5em;
 	}
 	h2 {
-		margin: 0.25em 0;
+		margin: 0 0 0.25em;
 	}
 	h3 {
 		color: #555555;
@@ -244,14 +258,41 @@ blockquote .name {
 	blockquote {
 		border-color: #999999;
 	}
+	.profiles-list {
+		display: table;
+		margin: 0.5em auto 0;
+	}
+	.profiles-list li {
+		display: table-row-group;
+		font-size: 0.75em;
+	}
+	.profiles-list li a {
+		display: table-row;
+	}
+	.profiles-list li a:after {
+		display: table-cell;
+		content: attr(href);
+		text-align: left;
+		padding: 0 0 0 0.5em;
+	}
+	.profiles-list li a .fa {
+		font-size: 1.5em;
+	}
+	.profiles-list li a > * {
+		display: table-cell;
+	}
+	.profiles-list li a .profile-name {
+		display: none;
+	}
 	* {
-		/*Avoid printing the color at the start of the transition (Chrome issue).*/
+		/* Avoid printing the color at the start of the transition (Chrome issue). */
 		-webkit-transition: none !important;
 		   -moz-transition: none !important;
 		        transition: none !important;
 
 	}
 }
+
 /*-->*/
 		</style>
 		<!--[if lt IE 9]>
