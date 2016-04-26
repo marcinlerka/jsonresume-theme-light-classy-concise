@@ -1,13 +1,12 @@
 {
-  "name": "jsonresume-theme-dark-classy-responsive",
+  "name": "jsonresume-theme-light-classy-responsive",
   "version": "1.0.2",
   "description": "An uber-classy JSONResume theme.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Alexander O'Mara",
-  "contributors": ["Jared Cubilla"],
+  "author": "Michael Huang",
   "license": "MIT",
   "dependencies": {
     "gravatar": "^1.0.6",
@@ -18,13 +17,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AlexanderOMara/jsonresume-theme-dark-classy-responsive.git"
+    "url": "https://github.com/myh1000/jsonresume-theme-light-classy-responsive.git"
   },
   "keywords": [
-    "json", "jsonresume", "theme"
+    "json", "jsonresume", "theme", "light classy"
   ],
   "bugs": {
-    "url": "https://github.com/AlexanderOMara/jsonresume-theme-dark-classy-responsive/issues"
+    "url": "https://github.com/myh1000/jsonresume-theme-light-classy-responsive/issues"
   },
-  "homepage": "https://github.com/AlexanderOMara/jsonresume-theme-dark-classy-responsive"
+  "homepage": "https://github.com/myh1000/jsonresume-theme-light-classy-responsive"
 }
