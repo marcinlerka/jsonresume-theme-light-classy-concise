@@ -1,7 +1,7 @@
 {
-  "name": "jsonresume-theme-light-classy-responsive-alt",
+  "name": "jsonresume-theme-light-classy-concise",
   "version": "1.0.0",
-  "description": "jsonresume-theme-light-classy-responsive-alt",
+  "description": "jsonresume-theme-light-classy-concise",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,16 +17,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/myh1000/jsonresume-theme-light-classy-responsive.git"
+    "url": "https://github.com/marcinlerka/jsonresume-theme-light-classy-concise.git"
   },
   "keywords": [
     "json",
     "jsonresume",
     "theme",
-    "light classy"
+    "light classy",
+    "light classy concise"
   ],
   "bugs": {
-    "url": "https://github.com/myh1000/jsonresume-theme-light-classy-responsive/issues"
+    "url": "https://github.com/marcinlerka/jsonresume-theme-light-classy-concise/issues"
   },
-  "homepage": "https://github.com/myh1000/jsonresume-theme-light-classy-responsive"
+  "homepage": "https://github.com/marcinlerka/jsonresume-theme-light-classy-concise"
 }

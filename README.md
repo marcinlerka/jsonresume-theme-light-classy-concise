@@ -1,4 +1,4 @@
-#jsonresume-theme-light-classy-responsive-concise
+#jsonresume-theme-light-classy-concise
 
 Concise version of [https://github.com/myh1000/jsonresume-theme-light-classy-responsive](https://github.com/myh1000/jsonresume-theme-light-classy-responsive)  
 with added Gitlab Font Awesome icons  
