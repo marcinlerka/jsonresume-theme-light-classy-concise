@@ -1,12 +1,12 @@
 {
-  "name": "jsonresume-theme-light-classy-responsive",
-  "version": "1.0.2",
-  "description": "An uber-classy JSONResume theme.",
+  "name": "jsonresume-theme-light-classy-responsive-alt",
+  "version": "1.0.0",
+  "description": "jsonresume-theme-light-classy-responsive-alt",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Michael Huang",
+  "author": "Marcin Lerka",
   "license": "MIT",
   "dependencies": {
     "gravatar": "^1.0.6",
@@ -20,7 +20,10 @@
     "url": "https://github.com/myh1000/jsonresume-theme-light-classy-responsive.git"
   },
   "keywords": [
-    "json", "jsonresume", "theme", "light classy"
+    "json",
+    "jsonresume",
+    "theme",
+    "light classy"
   ],
   "bugs": {
     "url": "https://github.com/myh1000/jsonresume-theme-light-classy-responsive/issues"
