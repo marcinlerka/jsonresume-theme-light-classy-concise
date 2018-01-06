@@ -1,6 +1,8 @@
-#jsonresume-theme-light-classy-responsive
+#jsonresume-theme-light-classy-responsive-concise
 
-An uber-classy theme for JSONResume, now responsive.
+Concise version of [https://github.com/myh1000/jsonresume-theme-light-classy-responsive](https://github.com/myh1000/jsonresume-theme-light-classy-responsive)  
+with added Gitlab Font Awesome icons  
+
 
 ## Usage
 
